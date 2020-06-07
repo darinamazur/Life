@@ -10,16 +10,21 @@ public class FieldTest {
         fld.clear();
         assertEquals(fld.width,fld.height);
     }
-    
+
     @Test
     public void getCell() {
+        Field fld = new Field(5,5);
+        fld.generate(3);
+        Cell x = fld.getCell(2,2);
+        Cell y = new Cell();
+        assertEquals(x,y);//false
     }
 
-    @Test
-    public void updateField() {
-    }
+    //@Test
+    //public void updateField() {
+    //}
 
-    @Test
+    /*@Test
     public void simulate() {
-    }
+    }*/
 }
